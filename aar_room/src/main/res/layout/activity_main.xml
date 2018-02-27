@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arc_room.word.WordActivity">
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:id="@+id/tv_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:padding="5dp"
+        android:text="Insert"
+        app:layout_constraintBottom_toBottomOf="@+id/et_word"
+        app:layout_constraintLeft_toRightOf="@+id/et_word"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_word"/>
+
+    <EditText
+        app:layout_constraintRight_toLeftOf="@+id/tv_insert"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/et_word"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="input word"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_word"/>
+
+</android.support.constraint.ConstraintLayout>
