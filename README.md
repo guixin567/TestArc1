@@ -35,4 +35,9 @@
         ObjectBox不需要数据库操作接口，也不需要手动创建数据库
         ObjectBox比Room更加的快，作者说在移动数据库中是最快的
         ObjectBox同样可以通过ObjectBoxLiveData将查询的数据封装成LiveData类型的数据
-    
+
+### 参考项目
+    ObjectBox
+        https://github.com/objectbox/objectbox-examples/tree/master/objectbox-arch-example
+    room-with-a-view
+        https://github.com/googlecodelabs/android-room-with-a-view
